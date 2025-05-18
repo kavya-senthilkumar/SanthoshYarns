@@ -1,0 +1,575 @@
+[
+    {
+        "_id": "630b7c690dd4ac34455cb262",
+        "name": "Versace",
+        "category": "men",
+        "color": "black",
+        "type": "shoes",
+        "description": "Odissea chunky leather trainers",
+        "price": 699,
+        "size": [
+            "36",
+            "38",
+            "40"
+        ],
+        "highlights": [
+            "dark-green",
+            "claf-leather",
+            "Medusa-head-motif"
+        ],
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "versace-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661697129697.jpg",
+                "path": "public\\men\\images-1661697129697.jpg",
+                "size": 48662
+            },
+            {
+                "fieldname": "images",
+                "originalname": "versace-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661697129774.jpg",
+                "path": "public\\men\\images-1661697129774.jpg",
+                "size": 36702
+            },
+            {
+                "fieldname": "images",
+                "originalname": "versace-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661697129795.jpg",
+                "path": "public\\men\\images-1661697129795.jpg",
+                "size": 34354
+            },
+            {
+                "fieldname": "images",
+                "originalname": "versace-4.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661697129840.jpg",
+                "path": "public\\men\\images-1661697129840.jpg",
+                "size": 48932
+            }
+        ],
+        "createdAt": "2022-08-28T14:32:09.906Z",
+        "updatedAt": "2022-08-28T14:32:09.906Z",
+        "__v": 0
+    },
+    {
+        "_id": "630bdc280dd6605053c3f066",
+        "name": "Zegna",
+        "category": "men",
+        "color": "black",
+        "type": "suit",
+        "description": "Lightweight blazer",
+        "price": 1181,
+        "size": [
+            "XXL"
+        ],
+        "highlights": [
+            "navy",
+            " cotton blend",
+            " front button fastening",
+            " notched collar",
+            " jetted chest pocket",
+            " long sleeves"
+        ],
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "zegna-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661721639781.jpg",
+                "path": "public\\men\\images-1661721639781.jpg",
+                "size": 26300
+            },
+            {
+                "fieldname": "images",
+                "originalname": "zegna-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661721639931.jpg",
+                "path": "public\\men\\images-1661721639931.jpg",
+                "size": 89496
+            },
+            {
+                "fieldname": "images",
+                "originalname": "zegna-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661721640024.jpg",
+                "path": "public\\men\\images-1661721640024.jpg",
+                "size": 154405
+            }
+        ],
+        "createdAt": "2022-08-28T21:20:40.056Z",
+        "updatedAt": "2022-08-28T21:20:40.056Z",
+        "__v": 0
+    },
+    {
+        "_id": "630bdcd70dd6605053c3f06a",
+        "name": "Clarks Originals",
+        "category": "men",
+        "color": "black",
+        "type": "shoes",
+        "description": "Front lace-up derby shoes",
+        "price": 163,
+        "size": [
+            "36 38 40"
+        ],
+        "highlights": [
+            "dark brown",
+            " calf leather",
+            " round toe",
+            " branded insole",
+            " flat rubber sole"
+        ],
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "clarks-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661721815030.jpg",
+                "path": "public\\men\\images-1661721815030.jpg",
+                "size": 49872
+            },
+            {
+                "fieldname": "images",
+                "originalname": "clarks-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661721815158.jpg",
+                "path": "public\\men\\images-1661721815158.jpg",
+                "size": 39847
+            },
+            {
+                "fieldname": "images",
+                "originalname": "clarks-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661721815224.jpg",
+                "path": "public\\men\\images-1661721815224.jpg",
+                "size": 39129
+            },
+            {
+                "fieldname": "images",
+                "originalname": "clarks-4.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/men",
+                "filename": "images-1661721815366.jpg",
+                "path": "public\\men\\images-1661721815366.jpg",
+                "size": 55810
+            }
+        ],
+        "createdAt": "2022-08-28T21:23:35.374Z",
+        "updatedAt": "2022-08-28T21:23:35.374Z",
+        "__v": 0
+    },
+    
+    {
+        "_id": "630c0ba6cacae4f0ab3bd5b0",
+        "name": "Valentino",
+        "category": "women",
+        "color": "black",
+        "type": "jeans",
+        "description": "Straight-leg jeans",
+        "price": 1940,
+        "size": [
+            "XS",
+            " S",
+            " M",
+            " L",
+            " XL"
+        ],
+        "highlights": [
+            "Black",
+            " Cotton",
+            " Logo patch to the rear",
+            " cropped leg",
+            " Feather-trim detailing"
+        ],
+        "detail": "Crafted in a straight-leg silhouette, these black Valentino jeans are trimmed with wispy feathers at the hem for a tactile completion.",
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "valentino-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661733798343.jpg",
+                "path": "public\\women\\images-1661733798343.jpg",
+                "size": 100712
+            },
+            {
+                "fieldname": "images",
+                "originalname": "valentino-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661733798345.jpg",
+                "path": "public\\women\\images-1661733798345.jpg",
+                "size": 52206
+            },
+            {
+                "fieldname": "images",
+                "originalname": "valentino-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661733798350.jpg",
+                "path": "public\\women\\images-1661733798350.jpg",
+                "size": 127182
+            },
+            {
+                "fieldname": "images",
+                "originalname": "valentino-4.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661733798355.jpg",
+                "path": "public\\women\\images-1661733798355.jpg",
+                "size": 44712
+            }
+        ],
+        "createdAt": "2022-08-29T00:43:18.501Z",
+        "updatedAt": "2022-08-29T00:43:18.501Z",
+        "__v": 0
+    },
+    {
+        "_id": "630c0cf3cacae4f0ab3bd5b4",
+        "name": "Balenciaga",
+        "category": "women",
+        "color": "#457199",
+        "type": "jacket",
+        "description": "Twisted-sleeve jacket",
+        "price": 1610,
+        "size": [
+            "S",
+            " M",
+            " L"
+        ],
+        "highlights": [
+            "Light blue",
+            " Cotton",
+            " Twisted detailing",
+            " Classic collar",
+            " Concealed front fastening",
+            " Two chest flap pockets"
+        ],
+        "detail": "Crafted in a straight-leg silhouette, these black Valentino jeans are trimmed with wispy feathers at the hem for a tactile completion.",
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "balenciaga-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734130933.jpg",
+                "path": "public\\women\\images-1661734130933.jpg",
+                "size": 255238
+            },
+            {
+                "fieldname": "images",
+                "originalname": "balenciaga-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734131155.jpg",
+                "path": "public\\women\\images-1661734131155.jpg",
+                "size": 129700
+            },
+            {
+                "fieldname": "images",
+                "originalname": "balenciaga-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734131173.jpg",
+                "path": "public\\women\\images-1661734131173.jpg",
+                "size": 92536
+            },
+            {
+                "fieldname": "images",
+                "originalname": "balenciaga-4.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734131179.jpg",
+                "path": "public\\women\\images-1661734131179.jpg",
+                "size": 118522
+            }
+        ],
+        "createdAt": "2022-08-29T00:48:51.208Z",
+        "updatedAt": "2022-08-29T00:48:51.208Z",
+        "__v": 0
+    },
+    {
+        "_id": "630c0d7ccacae4f0ab3bd5b7",
+        "name": "Amina Muadi",
+        "category": "women",
+        "color": "brown",
+        "type": "shoes",
+        "description": "Sita leather sandals",
+        "price": 937,
+        "size": [
+            "XS",
+            " S",
+            " M",
+            " L"
+        ],
+        "highlights": [
+            "Brown",
+            " Leather",
+            " Wraparound style",
+            " Self-tie fastening",
+            " Transparent strap",
+            " Platform sole"
+        ],
+        "detail": "Sita leather sandals",
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "amina-muaddi-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734268135.jpg",
+                "path": "public\\women\\images-1661734268135.jpg",
+                "size": 39380
+            },
+            {
+                "fieldname": "images",
+                "originalname": "amina-muaddi-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734268316.jpg",
+                "path": "public\\women\\images-1661734268316.jpg",
+                "size": 32366
+            },
+            {
+                "fieldname": "images",
+                "originalname": "amina-muaddi-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734268317.jpg",
+                "path": "public\\women\\images-1661734268317.jpg",
+                "size": 58369
+            },
+            {
+                "fieldname": "images",
+                "originalname": "amina-muaddi-4.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/women",
+                "filename": "images-1661734268447.jpg",
+                "path": "public\\women\\images-1661734268447.jpg",
+                "size": 67466
+            }
+        ],
+        "createdAt": "2022-08-29T00:51:08.496Z",
+        "updatedAt": "2022-08-29T00:51:08.496Z",
+        "__v": 0
+    },
+    
+    {
+        "_id": "630c1455cacae4f0ab3bd5d6",
+        "name": "Stella Kids",
+        "category": "kids",
+        "color": "black",
+        "type": "dress",
+        "description": "Drawstring cargo track pants",
+        "price": 878,
+        "size": [
+            "2yrs",
+            " 3yrs",
+            " 4yrs",
+            " 5yrs",
+            " 6yrs"
+        ],
+        "highlights": [
+            "Black",
+            " Cotton",
+            " Elasticated drawstring waistband",
+            " Two side cargo pockets",
+            " Two diagonal pockets to the sides"
+        ],
+        "detail": "Drawstring cargo track pants",
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "stella-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736021736.jpg",
+                "path": "public\\kids\\images-1661736021736.jpg",
+                "size": 11674
+            },
+            {
+                "fieldname": "images",
+                "originalname": "stella-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736021737.jpg",
+                "path": "public\\kids\\images-1661736021737.jpg",
+                "size": 13890
+            },
+            {
+                "fieldname": "images",
+                "originalname": "stella-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736021737.jpg",
+                "path": "public\\kids\\images-1661736021737.jpg",
+                "size": 97757
+            }
+        ],
+        "createdAt": "2022-08-29T01:20:21.742Z",
+        "updatedAt": "2022-08-29T01:20:21.742Z",
+        "__v": 0
+    },
+    {
+        "_id": "630c1609cacae4f0ab3bd5e0",
+        "name": "Molo",
+        "category": "kids",
+        "color": "black",
+        "type": "dress",
+        "description": "Teen denim skirt",
+        "price": 91,
+        "size": [
+            "14yrs",
+            " 16yrs"
+        ],
+        "highlights": [
+            "Indigo blue",
+            " Cotton blend",
+            " Logo patch to the rear",
+            " Belt loops",
+            " Front button fastening"
+        ],
+        "detail": "Teen denim skirt. Cotton 72%, Recycled Polyester 27%, Elastane 1%",
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "molo-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736457211.jpg",
+                "path": "public\\kids\\images-1661736457211.jpg",
+                "size": 149094
+            },
+            {
+                "fieldname": "images",
+                "originalname": "molo-2.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736457387.jpg",
+                "path": "public\\kids\\images-1661736457387.jpg",
+                "size": 147495
+            },
+            {
+                "fieldname": "images",
+                "originalname": "molo-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736457389.jpg",
+                "path": "public\\kids\\images-1661736457389.jpg",
+                "size": 327062
+            }
+        ],
+        "createdAt": "2022-08-29T01:27:37.394Z",
+        "updatedAt": "2022-08-29T01:27:37.394Z",
+        "__v": 0
+    },
+    {
+        "_id": "630c17d9cacae4f0ab3bd5ef",
+        "name": "Adidas Yeezy",
+        "category": "kids",
+        "color": "#516E04",
+        "type": "shoes",
+        "description": "Foam runner sneakers",
+        "price": 227,
+        "size": [
+            "14yrs",
+            " 16yrs"
+        ],
+        "highlights": [
+            "Foam rubber",
+            " Perforated design",
+            " Slip-on style",
+            " Alimond toe",
+            " Rubber sole"
+        ],
+        "detail": "The adidas YEEZY Kids Foam Runner arrives in an Stone Sage colour scheme. Designed by musical artist and creative Ye, this shoe first debuted on the soles of his daughter North West in 2019. They're known for their futuristic design and lightweight construction - which consists of EVA foam and harvested algae.",
+        "image": [
+            {
+                "fieldname": "images",
+                "originalname": "adidas-1.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736921199.jpg",
+                "path": "public\\kids\\images-1661736921199.jpg",
+                "size": 46290
+            },
+            {
+                "fieldname": "images",
+                "originalname": "adidas-3.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736921199.jpg",
+                "path": "public\\kids\\images-1661736921199.jpg",
+                "size": 43170
+            },
+            {
+                "fieldname": "images",
+                "originalname": "adidas-4.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736921200.jpg",
+                "path": "public\\kids\\images-1661736921200.jpg",
+                "size": 46052
+            },
+            {
+                "fieldname": "images",
+                "originalname": "adidas-5.jpg",
+                "encoding": "7bit",
+                "mimetype": "image/jpeg",
+                "destination": "./public/kids",
+                "filename": "images-1661736921202.jpg",
+                "path": "public\\kids\\images-1661736921202.jpg",
+                "size": 51168
+            }
+        ],
+        "createdAt": "2022-08-29T01:35:21.206Z",
+        "updatedAt": "2022-08-29T01:35:21.206Z",
+        "__v": 0
+    }
+    
+]

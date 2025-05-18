@@ -1,0 +1,230 @@
+.cart__items__container {
+    width: 100%;
+    min-width: 200px;
+    min-height: 100px;
+    height: calc(100% - 4rem);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.buy__button__container {
+    display: flex;
+    justify-content: center;
+}
+
+.buy__button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.buy__button:hover {
+    background-color: var(--primary-dark);
+}
+
+.cartItems{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart__header {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cart__header h2 {
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.shop__cart__items {
+    width: 100%;
+    height:90%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cart__empty {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 2rem;
+}
+
+.options {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.total__amount {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #f1f1f1;
+   /*  position: absolute; */
+    margin: auto;
+    bottom: 0%;
+    margin-bottom: 1.5rem;
+}
+
+.total__amount__label {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto 10px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.total__amount__value {
+    width: 20%;
+    min-width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.checkout {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Checkout Form Styles */
+.checkout__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form__group input,
+.form__group textarea,
+.form__group select {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-md);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.form__group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form__group input:focus,
+.form__group textarea:focus,
+.form__group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.form__actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.back__button,
+.submit__button {
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex: 1;
+}
+
+.back__button {
+    background-color: var(--background-alt);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.back__button:hover {
+    background-color: var(--background-dark);
+}
+
+.submit__button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
+
+.submit__button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Scrollbar Styles */
+.cart__items__container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cart__items__container::-webkit-scrollbar-track {
+    background: var(--background-alt);
+    border-radius: var(--radius-full);
+}
+
+.cart__items__container::-webkit-scrollbar-thumb {
+    background: var(--border-dark);
+    border-radius: var(--radius-full);
+}
+
+.cart__items__container::-webkit-scrollbar-thumb:hover {
+    background: var(--text-tertiary);
+}

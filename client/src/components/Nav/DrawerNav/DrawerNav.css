@@ -1,0 +1,39 @@
+/* --- drawernav.css --- */
+
+.drawer__icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #1f1f1f;
+    transition: transform 0.2s ease;
+}
+
+.drawer__icon:hover {
+    transform: scale(1.1);
+}
+
+.drawer__content .MuiDrawer-paper {
+    background-color: #fffbea;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+.drawer__list {
+    padding: 0;
+    margin: 0;
+}
+
+.drawer__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    transition: color 0.3s ease;
+}
+
+.drawer__link:hover {
+    color: #ffcf40;
+    background-color: rgba(255, 207, 64, 0.1);
+    border-radius: 8px;
+}

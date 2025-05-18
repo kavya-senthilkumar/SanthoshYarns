@@ -1,0 +1,33 @@
+.navbrand__container {
+    height: 100%;
+    width: 20%;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbrand {
+    height: auto;
+    width: 100%;
+    min-width: 250px;
+    margin: auto 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+.brand__logo {
+    height: 60px;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .navbrand__container {
+        align-self: center;
+    }
+}

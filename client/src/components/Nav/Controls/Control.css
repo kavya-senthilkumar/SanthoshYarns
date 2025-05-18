@@ -1,0 +1,62 @@
+.control__bar__container {
+    display: flex;
+    align-items: center;
+}
+
+.controls__container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.control a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+    transition: color 0.2s ease;
+}
+
+.control a:hover {
+    color: var(--primary);
+}
+
+.control svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Badge Styles */
+.MuiBadge-badge {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+/* Cart Icon Styles */
+.cart-icon {
+    color: var(--text-primary);
+    transition: color 0.2s ease;
+}
+
+.cart-icon:hover {
+    color: var(--primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .controls__container {
+        gap: 1rem;
+    }
+
+    .control svg {
+        width: 22px;
+        height: 22px;
+    }
+}
