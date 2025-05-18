@@ -64,21 +64,11 @@
     color: var(--text-tertiary);
 }
 
-.size-checkboxes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 0.5rem;
-}
-
-.size-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.size-checkbox input[type="checkbox"] {
-    width: auto;
+.input-help {
+    display: block;
+    margin-top: var(--spacing-xs);
+    color: var(--text-tertiary);
+    font-size: 0.875rem;
 }
 
 .form-actions {

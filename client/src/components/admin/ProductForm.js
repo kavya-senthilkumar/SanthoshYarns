@@ -7,7 +7,8 @@ const ProductForm = ({ product, onSubmit, onCancel }) => {
         name: '',
         category: '',
         price: '',
-        color: ''
+        color: '',
+        size: []
     });
 
     useEffect(() => {
@@ -16,21 +17,35 @@ const ProductForm = ({ product, onSubmit, onCancel }) => {
                 name: product.name || '',
                 category: product.category || '',
                 price: product.price || '',
-                color: product.color || ''
+                color: product.color || '',
+                size: Array.isArray(product.size) ? product.size : (product.size || '').split(',').map(s => s.trim())
             });
         }
     }, [product]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
+        if (name === 'size') {
+            // Convert comma-separated string to array
+            const sizeArray = value.split(',').map(size => size.trim()).filter(size => size !== '');
+            setFormData(prev => ({
+                ...prev,
+                size: sizeArray
+            }));
+        } else {
+            setFormData(prev => ({
+                ...prev,
+                [name]: value
+            }));
+        }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (formData.size.length === 0) {
+            alert('Please enter at least one size');
+            return;
+        }
         onSubmit(formData);
     };
 
@@ -93,6 +108,20 @@ const ProductForm = ({ product, onSubmit, onCancel }) => {
                             onChange={handleChange}
                             required
                         />
+                    </div>
+
+                    <div className="form-group">
+                        <label htmlFor="size">Sizes (comma-separated)</label>
+                        <input
+                            type="text"
+                            id="size"
+                            name="size"
+                            value={formData.size.join(', ')}
+                            onChange={handleChange}
+                            placeholder="e.g. 36, 38, 40, 42"
+                            required
+                        />
+                        <small className="input-help">Enter sizes separated by commas</small>
                     </div>
 
                     <div className="form-actions">

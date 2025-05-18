@@ -116,10 +116,12 @@ const AdminProductManager = () => {
 
             <div className="products-grid">
                 {products.map((product) => (
-                                        <div key={product._id} className="product-card">                        <div className="product-info">
+                    <div key={product._id} className="product-card">
+                        <div className="product-info">
                             <h3>{product.name}</h3>
                             <p data-label="Category">{product.category}</p>
                             <p data-label="Color">{product.color}</p>
+                            <p data-label="Sizes">{Array.isArray(product.size) ? product.size.join(', ') : product.size}</p>
                             <p className="product-price">₹{product.price}</p>
                             <div className="product-actions">
                                 <button
