@@ -24,7 +24,7 @@ const AdminLogin = () => {
         e.preventDefault();
         setLoading(true);
         try {
-            const response = await axios.post('http://localhost:5000/api/admin/login', credentials);
+            const response = await axios.post('santhoshyarns.onrender.com/api/admin/login', credentials);
             if (response.data.success) {
                 localStorage.setItem('adminToken', response.data.token);
                 navigate('/admin/dashboard');
