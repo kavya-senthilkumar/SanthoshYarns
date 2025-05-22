@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Orders.css';
-import { FaSearch, FaFilter, FaDownload } from 'react-icons/fa';
+import { FaSearch, FaFilter, FaDownload, FaCalendarAlt } from 'react-icons/fa';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
@@ -9,6 +9,7 @@ const Orders = () => {
     const [filteredOrders, setFilteredOrders] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [filterStatus, setFilterStatus] = useState('all');
+    const [selectedDate, setSelectedDate] = useState('');
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -39,7 +40,6 @@ const Orders = () => {
             
             if (response.data.success) {
                 toast.success(`Order status updated to ${newStatus}`);
-                // Refresh orders list
                 fetchOrders();
             } else {
                 toast.error('Failed to update order status');
@@ -47,6 +47,24 @@ const Orders = () => {
         } catch (err) {
             console.error('Error updating order status:', err);
             toast.error('Failed to update order status');
+        }
+    };
+
+    const handleCancelOrder = async (orderId) => {
+        try {
+            const response = await axios.patch(`http://localhost:5000/api/orders/${orderId}/status`, {
+                status: 'cancelled'
+            });
+            
+            if (response.data.success) {
+                toast.success('Order cancelled successfully');
+                fetchOrders();
+            } else {
+                toast.error('Failed to cancel order');
+            }
+        } catch (err) {
+            console.error('Error cancelling order:', err);
+            toast.error('Failed to cancel order');
         }
     };
 
@@ -69,8 +87,17 @@ const Orders = () => {
             result = result.filter(order => order.status === filterStatus);
         }
 
+        // Apply date filter
+        if (selectedDate) {
+            const filterDate = new Date(selectedDate);
+            result = result.filter(order => {
+                const orderDate = new Date(order.createdAt);
+                return orderDate.toDateString() === filterDate.toDateString();
+            });
+        }
+
         setFilteredOrders(result);
-    }, [searchTerm, filterStatus, orders]);
+    }, [searchTerm, filterStatus, selectedDate, orders]);
 
     const totalAmount = Array.isArray(filteredOrders) 
         ? filteredOrders.reduce((sum, order) => sum + (order.totalAmount || 0), 0)
@@ -132,34 +159,37 @@ const Orders = () => {
                 </div>
             </div>
 
-            <div className="orders-tools">
-                <div className="search-bar">
+            <div className="orders-filters">
+                <div className="search-box">
                     <FaSearch className="search-icon" />
                     <input
                         type="text"
-                        placeholder="Search orders..."
+                        placeholder="Search by category..."
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                     />
                 </div>
-
-                <div className="filter-select">
-                    <FaFilter className="filter-icon" />
+                <div className="filter-group">
                     <select
                         value={filterStatus}
                         onChange={(e) => setFilterStatus(e.target.value)}
                     >
                         <option value="all">All Status</option>
                         <option value="pending">Pending</option>
-                        <option value="processing">Processing</option>
-                        <option value="completed">Completed</option>
+                        <option value="delivered">Delivered</option>
                         <option value="cancelled">Cancelled</option>
                     </select>
                 </div>
-
-                <button className="export-btn" onClick={handleExport}>
-                    <FaDownload />
-                    Export CSV
+                <div className="date-filter">
+                    <FaCalendarAlt className="calendar-icon" />
+                    <input
+                        type="date"
+                        value={selectedDate}
+                        onChange={(e) => setSelectedDate(e.target.value)}
+                    />
+                </div>
+                <button className="export-button" onClick={handleExport}>
+                    <FaDownload /> Export
                 </button>
             </div>
 
@@ -207,13 +237,21 @@ const Orders = () => {
                                     </td>
                                     <td>
                                         <div className="action-buttons">
-                                            {order.status !== 'delivered' && (
-                                                <button 
-                                                    className="btn-deliver"
-                                                    onClick={() => handleStatusUpdate(order._id, 'delivered')}
-                                                >
-                                                    Mark Delivered
-                                                </button>
+                                            {order.status !== 'delivered' && order.status !== 'cancelled' && (
+                                                <>
+                                                    <button 
+                                                        className="btn-deliver"
+                                                        onClick={() => handleStatusUpdate(order._id, 'delivered')}
+                                                    >
+                                                        Mark Delivered
+                                                    </button>
+                                                    <button 
+                                                        className="btn-cancel"
+                                                        onClick={() => handleCancelOrder(order._id)}
+                                                    >
+                                                        Cancel Order
+                                                    </button>
+                                                </>
                                             )}
                                         </div>
                                     </td>
