@@ -34,11 +34,6 @@ const Contact = () => {
                         </div>
                     </div>
                     
-                    <div className="info__item">
-                        <div className="info__icon__wrapper">
-                            <FaEnvelope className="info__icon" />
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
