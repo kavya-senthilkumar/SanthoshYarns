@@ -38,11 +38,6 @@ const Contact = () => {
                         <div className="info__icon__wrapper">
                             <FaEnvelope className="info__icon" />
                         </div>
-                        <div className="info__content">
-                            <h3>Email Us</h3>
-                            <p>support@santhoshyarns.com</p>
-                            <p>sales@santhoshyarns.com</p>
-                        </div>
                     </div>
                 </div>
             </div>
