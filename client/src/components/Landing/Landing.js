@@ -52,7 +52,7 @@ const Landing = () => {
             {/* Hero Section */}
             <section id="home" className="section hero-section">
                 <div className="hero-content">
-                    <h1>Premium Quality Yarns for Your Creative Projects</h1>
+                    <h1>Premium Quality Yarns</h1>
                     <p>Discover our extensive collection of cotton, nylon, and polyester yarns</p>
                     <button className="cta-button" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
                         Learn More
