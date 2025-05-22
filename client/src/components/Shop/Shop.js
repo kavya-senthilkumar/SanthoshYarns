@@ -33,7 +33,7 @@ const Shop = () => {
                 <div className="shop-header">
                     <h1>Our Premium Yarn Collection</h1>
                     <p className="shop-description">
-                        Discover our carefully curated selection of high-quality yarns for your creative projects
+                        Discover our carefully curated selection of high-quality yarns
                     </p>
                 </div>
                 
